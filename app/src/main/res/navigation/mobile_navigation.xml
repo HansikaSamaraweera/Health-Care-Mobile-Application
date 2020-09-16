@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@+id/nav_home"
+            tools:context=".navActivity">
+
+    <fragment
+            android:id="@+id/nav_home"
+            android:name="com.example.healthcare.ui.home.HomeFragment"
+            android:label="@string/menu_home"
+            tools:layout="@layout/fragment_home"
+    />
+    <fragment
+            android:id="@+id/nav_gallery"
+            android:name="com.example.healthcare.ui.medicine.MedicineFragment"
+            android:label="Medicine"
+            tools:layout="@layout/fragment_medicine"/>
+
+    <fragment
+            android:id="@+id/nav_slideshow"
+            android:name="com.example.healthcare.ui.patients.PatientsFragment"
+            android:label="Patients"
+            tools:layout="@layout/fragment_patients"/>
+
+    <fragment
+            android:id="@+id/nav_tools"
+            android:name="com.example.healthcare.ui.notes.NotesFragment"
+            android:label="Notes"
+            tools:layout="@layout/fragment_notes"/>
+
+    <fragment
+            android:id="@+id/nav_share"
+            android:name="com.example.healthcare.ui.profile.ProfileFragment"
+            android:label="Profile"
+            tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+            android:id="@+id/nav_send"
+            android:name="com.example.healthcare.ui.send.SendFragment"
+            android:label="@string/menu_send"
+            tools:layout="@layout/fragment_send"/>
+</navigation>
