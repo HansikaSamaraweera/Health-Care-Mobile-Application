@@ -17,4 +17,24 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="title">Medicine</string>
+    <string name="secondary_text">Keep Your Medicine Details Here</string>
+    <string name="action_1">Visit</string>
+    <string name="Patient">patient</string>
+    <string name="pdetails">Keep Patient Details Here</string>
+    <string name="Notes">note</string>
+    <string name="Calender">calender</string>
+    <string name="label">name</string>
+    <string name="label_1">After Meal</string>
+    <string name="label_2">Before Meal</string>
+    <string name="morn">Morning</string>
+    <string name="after">Afternoon</string>
+    <string name="nigh">Night</string>
+    <string name="company">Company</string>
+    <string name="image">Image</string>
+    <string name="dosage">Dosage</string>
+    <string name="expire">Expire Date</string>
+    <string name="price">Price</string>
+    <string name="add">Add Medicine</string>
+    <string name="medicine">Medicine Details</string>
 </resources>
