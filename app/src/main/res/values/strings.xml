@@ -37,4 +37,5 @@
     <string name="price">Price</string>
     <string name="add">Add Medicine</string>
     <string name="medicine">Medicine Details</string>
+    <string name="view">Medicine</string>
 </resources>

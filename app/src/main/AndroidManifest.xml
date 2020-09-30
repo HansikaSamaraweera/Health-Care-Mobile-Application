@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MedicineView"></activity>
-        <activity android:name=".MedicineHome" />
         <activity android:name=".CalenderActivity" />
         <activity android:name=".NotesActivity" />
         <activity android:name=".PatientActivity" />

@@ -8,24 +8,35 @@
         >
 
 <!--    Medicine-->
-
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card123"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:theme="@style/Theme.MaterialComponents.DayNight">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-50dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="20dp"
-        android:paddingTop="35dp"
+        android:layout_weight="1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="41dp"
+
         android:theme="@style/Theme.MaterialComponents.DayNight">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="left">
 
             <!-- Media -->
 
@@ -72,7 +83,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Visit"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/black_overlay"
                     android:textColor="@color/white"
                     />
             </LinearLayout>
@@ -126,19 +137,15 @@
         android:id="@+id/card1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-50dp"
-        android:paddingLeft="180dp"
-        android:paddingRight="20dp"
-        android:paddingTop="35dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="220dp"
-        tools:layout_editor_absoluteY="41dp"
+        android:layout_weight="1"
         android:theme="@style/Theme.MaterialComponents.DayNight">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="right">
 
             <!-- Media -->
 
@@ -176,7 +183,7 @@
             <!-- Buttons -->
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="match_parent"
                 android:layout_margin="8dp"
                 android:orientation="horizontal">
 
@@ -185,7 +192,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Visit"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/black_overlay"
                     android:textColor="@color/white"
                     />
             </LinearLayout>
@@ -235,16 +242,20 @@
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
 <!--    Notes-->
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/card2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-50dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="20dp"
-        android:paddingTop="300dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="380dp"
@@ -253,7 +264,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="left">
 
             <!-- Media -->
 
@@ -301,7 +313,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Visit "
-                    android:background="@color/colorPrimary"
+                    android:background="@color/black_overlay"
                     android:textColor="@color/white"
 
                     />
@@ -358,10 +370,9 @@
         android:id="@+id/card3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-50dp"
-        android:paddingLeft="180dp"
-        android:paddingTop="300dp"
-        android:paddingRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="220dp"
         tools:layout_editor_absoluteY="380dp"
@@ -370,7 +381,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="right">
 
             <!-- Media -->
 
@@ -416,7 +428,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Visit"
-                android:background="@color/colorPrimary"
+                android:background="@color/black_overlay"
                 android:textColor="@color/white"
                 />
             </LinearLayout>
@@ -466,7 +478,8 @@
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
-
+            </LinearLayout>
+        </LinearLayout>
     <TextView
         android:id="@+id/text_home"
         android:layout_width="62dp"
@@ -476,4 +489,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

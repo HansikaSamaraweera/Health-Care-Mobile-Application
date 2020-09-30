@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
@@ -15,11 +14,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.healthcare.CalenderActivity;
 import com.example.healthcare.MedicineActivity;
-import com.example.healthcare.MedicineHome;
 import com.example.healthcare.R;
-import com.example.healthcare.ui.home.HomeFragment;
 
 public class MedicineFragment extends Fragment {
 
@@ -51,7 +47,7 @@ public class MedicineFragment extends Fragment {
                     public void onClick(View view) {
                         Intent i = new Intent(getActivity(), MedicineActivity.class);
                         startActivity(i);
-               
+
                    }
                 });
             }
