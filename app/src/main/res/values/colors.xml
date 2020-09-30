@@ -9,4 +9,6 @@
 
 
     <color name="black_overlay">#08AE9E</color>
+    <color name="white">#FCFFFF</color>
+
 </resources>
