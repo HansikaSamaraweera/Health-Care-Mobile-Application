@@ -3,6 +3,10 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="signintext">#7379d279</color>
+    <color name="signinback">	#d6d6d6</color>
+        <color name="signinbtn">	#4CAF50</color>
+
 
     <color name="black_overlay">#08AE9E</color>
 </resources>
