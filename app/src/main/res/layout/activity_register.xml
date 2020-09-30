@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/signinback"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp"
+        app:layout_constraintGuide_end="24dp" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="389dp"
+        app:layout_constraintGuide_end="24dp" />
+
+    <ImageView
+        android:id="@+id/imageView_usericon_signin"
+        android:layout_width="174dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/usericon_signin"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right_signin"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left_signin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usericon" />
+
+    <EditText
+        android:id="@+id/editText_Uname_signin"
+        android:layout_width="265dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/user_name_signin"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right_signin"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left_signin"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_usericon_signin"
+        android:background="@drawable/et_signin"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editTextpssword_signin"
+        android:layout_width="265dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/password_signin"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right_signin"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left_signin"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Uname_signin"
+        android:background="@drawable/et_signin"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editText_Repassword_signin"
+        android:layout_width="265dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/re_enter_password_signin"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right_signin"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left_signin"
+        app:layout_constraintTop_toBottomOf="@+id/editTextpssword_signin"
+        android:background="@drawable/et_signin"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="182dp"
+        android:text="@string/sign_in_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right_signin"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left_signin"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Repassword_signin"
+        android:background="@drawable/et_sigin_btn"
+
+        tools:text="Sign In" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

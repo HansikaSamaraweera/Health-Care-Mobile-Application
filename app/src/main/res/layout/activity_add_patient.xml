@@ -25,19 +25,24 @@
             android:backgroundTint="#08AE9E"
             android:inputType="textPersonName"/>
 
-    <RadioButton
-            android:id="@+id/rdMale"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Male"
-    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp">
 
-    <RadioButton
+        <RadioButton
+            android:id="@+id/rdMale"
+            android:layout_width="190dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="30dp"
+            android:text="Male" />
+
+        <RadioButton
             android:id="@+id/rdFemale"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Female"
-    />
+            android:layout_height="47dp"
+            android:text="Female" />
+    </LinearLayout>
+
     <EditText
             android:id="@+id/eddiagnosed"
             android:layout_width="match_parent"
@@ -98,35 +103,35 @@
             android:backgroundTint="#08AE9E"
             android:inputType="textPersonName"/>
 
-    <Button
-            android:id="@+id/btnconfirm"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="25dp"
-            android:background="#08AE9E"
-            android:gravity="center"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
             android:text="Save"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginStart="60dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginLeft="15dp"/>
-    <Button
-            android:id="@+id/btncancel"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginEnd="25dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="78dp"
-            android:background="#6BCDFD"
-            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:id="@+id/btnSave"
+            android:layout_marginLeft="20dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
             android:text="Cancel"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold"/>
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:id="@+id/btnCancel"/>
+    </LinearLayout>
+
+
 </LinearLayout>
