@@ -7,19 +7,26 @@
         tools:context=".navActivity" android:orientation="vertical">
 
     <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#08AE9E"
-            android:queryHint="Search"
-    />
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0CCDA3"
+        android:queryHint="Search"
+        />
 
     <Button
-            android:id="@+id/btnaddPatient"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="#08AE9E"
-            android:text="+Add New Patient"/>
+        android:id="@+id/btnaddPatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        android:background="#0CCDA3"
+        android:text="+Add New Patient"/>
 
+    <ListView
+        android:id="@+id/patient_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </ListView>
 </LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".edit_Patient">
+    <EditText
+        android:id="@+id/edpname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Patient Name"
+        android:backgroundTint="#08AE9E"
+        />
+
+    <EditText
+        android:id="@+id/edage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Age"
+        android:backgroundTint="#08AE9E"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp">
+
+        <RadioButton
+            android:id="@+id/rdMale"
+            android:layout_width="190dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="30dp"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rdFemale"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="Female" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/eddiagnosed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Diagnosed"
+        android:backgroundTint="#08AE9E"
+        />
+
+    <EditText
+        android:id="@+id/edMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Medicine"
+        android:backgroundTint="#08AE9E"
+        />
+
+    <EditText
+        android:id="@+id/date1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="2020/09/21"
+        android:backgroundTint="#08AE9E"
+        />
+
+    <Spinner
+        android:id="@+id/spinner123"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="Blood Group"
+        />
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone"
+        android:backgroundTint="#08AE9E"
+        />
+
+    <EditText
+        android:id="@+id/eddocName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="DoctorName"
+        android:backgroundTint="#08AE9E"
+        />
+
+    <EditText
+        android:id="@+id/date1234"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Follow Up"
+        android:backgroundTint="#08AE9E"
+        android:inputType="textPersonName"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0CCDA3"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:id="@+id/btnUpPatient"
+            android:layout_marginLeft="20dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#50D5B7"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:id="@+id/btnCancelUP"/>
+    </LinearLayout>
+</LinearLayout>

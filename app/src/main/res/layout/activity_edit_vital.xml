@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".editVital">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textAllCaps="false"
+            android:textColor="#0CCDA3"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:id="@+id/btnDetails"
+            android:background="@drawable/button_border"
+            android:layout_marginLeft="10dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0CCDA3"
+            android:text="Vital"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/btnVitalcuz"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtABC"
+        android:layout_width="361dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:text="Provide Vital Details"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/txtbp"
+            android:layout_width="86dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="BP"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edbpd"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:backgroundTint="#50D5B7"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/txtw"
+            android:layout_width="86dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="Weight"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edweight"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:backgroundTint="#50D5B7"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/txtheight"
+            android:layout_width="86dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="Height"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edheight"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:backgroundTint="#50D5B7"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/btnbmi"
+            android:layout_width="86dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="#0CCDA3"
+            android:text="BMI"
+            android:textColor="#C1FCD3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtbmivalue"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:background="#D3D3D3"
+            android:text="" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#0CCDA3"
+        android:textColor="#ffffff"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        />
+
+    <Button
+        android:id="@+id/btnCancel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#50D5B7"
+        android:textColor="#ffffff"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+     />
+</LinearLayout>
