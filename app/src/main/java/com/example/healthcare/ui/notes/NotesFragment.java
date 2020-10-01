@@ -16,6 +16,7 @@ import com.example.healthcare.EditNotesActivity;
 import com.example.healthcare.Model.Notes;
 import com.example.healthcare.NotesActivity;
 import com.example.healthcare.R;
+import com.example.healthcare.database.DBHandler;
 
 import java.util.ArrayList;
 
@@ -23,6 +24,7 @@ public class NotesFragment extends Fragment {
 
     private NotesViewModel notesViewModel;
     private Notes notes;
+    DBHandler ob;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -37,18 +39,15 @@ public class NotesFragment extends Fragment {
         notesViewModel =
                 ViewModelProviders.of(this).get(NotesViewModel.class);
         View root = inflater.inflate(R.layout.fragment_notes, container, false);
+        ob=new DBHandler(getContext());
+
         final TextView textView = root.findViewById(R.id.text_tools);
         final Button next=root.findViewById(R.id.bb_n);
         final Spinner spinn =root.findViewById(R.id.Spinner01);
         final ListView list = root.findViewById(R.id.list);notes=new Notes();
         final ArrayList<String> arrayList = new ArrayList<>();
         arrayList.removeAll(arrayList);
-        arrayList.add("Buy Medicines        2020-10-15");
-        arrayList.add("Go to Gym             2020-10-16");
-        arrayList.add("Buy Medicines         2020-10-08");
-        arrayList.add("Buy Medicines         2020-10-15");
-        arrayList.add("Go to Gym             2020-10-16");
-        arrayList.add("Buy Medicines         2020-10-08");
+
         notesViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
@@ -78,30 +77,27 @@ public class NotesFragment extends Fragment {
                     @Override
                     public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                         // your code here
-                        if(id==1) {
+                       if(id==1) {
                             arrayList.removeAll(arrayList);
-                            arrayList.add("Buy Medicines        2020-10-15");
+
+                            String[] arr = ob.displayNotesImportant();
+
+                            for(String x:arr){
+                                arrayList.add(x);
+                            }
 
                             arrayAdapter.notifyDataSetChanged();
-                        }else if(id==0) {
+                        }  else {
                             arrayList.removeAll(arrayList);
-                            arrayList.add("Go to Gym             2020-10-16");
-                            arrayList.add("Go to Gym             2020-10-16");
-                            arrayList.add("Go to Gym             2020-10-16");
 
+                           String[] arr1 = ob.displayNotesToDo();
 
-                            arrayAdapter.notifyDataSetChanged();
-                        }else if(id==2) {
-                            arrayList.removeAll(arrayList);
-                            arrayList.add("Do Exercises             2020-10-16");
-                            arrayList.add("Do Exercises             2020-10-16");
-
-
+                           for(String x:arr1){
+                               arrayList.add(x);
+                           }
 
                             arrayAdapter.notifyDataSetChanged();
                         }
-                        //System.out.println("\n\n\n\n\n"+position);
-
                     }
 
                     @Override

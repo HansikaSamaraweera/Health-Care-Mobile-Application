@@ -3,6 +3,5 @@
     <string-array name="spinnerItems">
         <item>To-do</item>
         <item>Important</item>
-        <item>Daily</item>
     </string-array>
 </resources>

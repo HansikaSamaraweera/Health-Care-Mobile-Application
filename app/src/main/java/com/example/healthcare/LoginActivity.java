@@ -30,7 +30,11 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Validate(username.getText().toString(), password.getText().toString());
+                int x = Validate(username.getText().toString(), password.getText().toString());
+                if(x==1) {
+                    Intent intent = new Intent(LoginActivity.this, navActivity.class);
+                    startActivity(intent);
+                }
             }
         });
         signin.setOnClickListener(new View.OnClickListener() {
@@ -45,15 +49,16 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    private void Validate(String Username, String Password){
-        if( Username == "Admin" ){
-            if(Password == "1234") {
-                Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
-                startActivity(intent);
+    private int Validate(String Username, String Password){
+        if( Username.equals("Admin") ){
+            if(Password.equals("1234")) {
+                return 1;
             }
         }
         else{
 
         }
+        return 0;
     }
+
 }
